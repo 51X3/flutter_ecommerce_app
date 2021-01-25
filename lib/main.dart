@@ -24,10 +24,12 @@ class MyApp extends StatelessWidget {
       onGenerateRoute: (RouteSettings settings) {
         if (settings.name.contains('detail')) {
           return CustomRoute<bool>(
-              builder: (BuildContext context) => ProductDetailPage());
+              builder: (BuildContext context) => ProductDetailPage()
+          );
         } else {
           return CustomRoute<bool>(
-              builder: (BuildContext context) => MainPage());
+              builder: (BuildContext context) => MainPage()
+          );
         }
       },
       initialRoute: "MainPage",
